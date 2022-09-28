@@ -54,6 +54,7 @@ namespace Пр_9
                 {
                     if (j == 1) sumThings += table[i, j];
                     if (j == 2) sumWeigth += table[i, j];
+                    if (j == 2) sumWeigth += table[i, j];
                 }
             }
             averageWeigth = sumWeigth / sumThings;

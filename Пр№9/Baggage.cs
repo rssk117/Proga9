@@ -13,6 +13,8 @@ namespace Пр_9
         public Baggage(double _totalWeight, int _quantityThings)
         {
             TotalWeight =_totalWeight;
+            TotalWeight = _totalWeight;
+            QuantityThings = _quantityThings;
             QuantityThings = _quantityThings;
         }
     }
