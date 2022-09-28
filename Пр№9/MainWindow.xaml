@@ -1,0 +1,31 @@
+﻿<Window x:Class="Пр_9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Пр_9"
+        mc:Ignorable="d"
+        Title="Багаж" Height="643" Width="517" FontSize="20" Background="#FFEBC3FF">
+    <Grid Margin="0,0,0,-16">
+        <DataGrid x:Name="DataGrid"  Margin="0,0,0,435" Background="White" BorderBrush="Black" Foreground="Black"/>
+        <GroupBox Header="Информация о багаже" Margin="10,221,10,221">
+            <Grid Height="151" Margin="-13,0,-12,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Общий вес" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top"/>
+                <Label Content="Количество вещей" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top"/>
+                <Label Content="№ п/п" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="Weigth" HorizontalAlignment="Left" Margin="219,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="Black"/>
+                <TextBox x:Name="NumberOrder" HorizontalAlignment="Left" Margin="219,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="Black"/>
+                <TextBox x:Name="Quantity" HorizontalAlignment="Left" Margin="219,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="Black"/>
+                <Button Content="Добавить" HorizontalAlignment="Left" Margin="356,16,0,0" VerticalAlignment="Top" Height="109" Width="116" BorderBrush="Black" Click="Add_Click"/>
+            </Grid>
+        </GroupBox>
+        <Button Content="О программе" HorizontalAlignment="Left" Margin="178,561,0,0" VerticalAlignment="Top" Width="146" BorderBrush="Black" Click="Info_Click"/>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="360,561,0,0" VerticalAlignment="Top" Width="124" BorderBrush="Black" Click="Exit_Click"/>
+        <Button Content="Очистить" HorizontalAlignment="Left" Margin="10,561,0,0" VerticalAlignment="Top" Width="133" BorderBrush="Black" Click="Clear_Click"/>
+        <TextBox x:Name="result" HorizontalAlignment="Left" Margin="10,448,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336"/>
+        <Button Content="Рассчитать" HorizontalAlignment="Left" Margin="360,446,0,0" VerticalAlignment="Top" Width="124" BorderBrush="Black" Click="Calculate_Click"/>
+    </Grid>
+</Window>
